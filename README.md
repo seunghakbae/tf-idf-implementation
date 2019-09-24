@@ -26,3 +26,21 @@ Doucment Frequency, 문서 빈도는 이 term이 얼마나 다른 document에 �
 
 ### Cosine Similarity
 그러면 이제 query와 document간의 각도를 활용한 cosine similarity를 사용하여 얼마나 연관이 있는 지를 볼수가 있다. document와 query의 tf-idf값과 query만의 tf-idf값을 구한 후, cosine similarity를 계산할 수 있다. 그런 다음, cosine similarity의 값을 기준으로 가장 높을 5개의 document를 구하다.
+
+1. Documents를 index한다. 
+
+2. 각 document를 token화 하고 stopwords를 제거하고 stemming해준다. 
+
+3. 각 document에서 각 token별로 token이 몇개 있는지를 table로 저장한다.
+
+4. 각 token별 어떤 document가 있는 지 inverted index를 구한다
+
+5. inverted index를 통해 query를 포함하는 document를 구한다. 
+
+6. query와 document 사이의 tf-idf를 구한다. 
+
+7. query의 tf-idf를 구한다. 
+
+8. 각 query와 document간의 cosine similarity를 구한다. 
+
+9. cosine similarity를 기준으로 상위 5개의 document를 구한다. 
