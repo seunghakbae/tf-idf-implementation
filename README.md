@@ -10,7 +10,7 @@ Inverted Table은 기준이 문서가 아니라 단어이다. 그래서, 각 단
 ## TF-IDF
 하지만, inverted table은 그 단어가 속한 document만 보여줄 뿐, 그 단어와 document가 얼마나 연관성이 있는 지 보여주진 못한다. 그래서, 이 연관성을 보여주기 위해서 나온 것이 tf-idf이다.
 
-![tf_idf_formula.PNG]
+![tf_idf_formula](./tf_idf_formula.PNG)
 
 위에서 소문자 t는 우리가 구하고 싶은 term, 소문자 d는 document이다. 대문자 N은 모든 문자의 개수이다. 
 
@@ -20,7 +20,7 @@ TF Vector는 word count vector이다. 즉, 특정한 term 단어가 document에 
 ### DF (Document Frequency)
 Doucment Frequency, 문서 빈도는 이 term이 얼마나 다른 document에 나왔는 지를 보여주는 지표이다. 이 값의 역수가 idf (inverse document frequency)이다. 
 
-![cosine_similarity.PNG]
+![cosine_similarity](./cosine_similarity.PNG)
 
 즉, 특정한 term이 특정한 document에 많이 나올수록 (TF가 높을 수록), 반대로 term이 나온 문서의 개수가 적을수록 (N의로 나뉘어지기 때문에 df값이 클수록 값이 작아진다) 그 term과 document사이의 tf-idf값이 커지게 된다!
 
