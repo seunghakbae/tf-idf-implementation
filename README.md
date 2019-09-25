@@ -44,3 +44,7 @@ Doucment Frequency, 문서 빈도는 이 term이 얼마나 다른 document에 �
 8. 각 query와 document간의 cosine similarity를 구한다. 
 
 9. cosine similarity를 기준으로 상위 5개의 document를 구한다. 
+
+
+결과
+[result](result.png)
