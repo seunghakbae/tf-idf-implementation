@@ -47,4 +47,4 @@ Doucment Frequency, 문서 빈도는 이 term이 얼마나 다른 document에 �
 
 
 결과
-[result](./result.PNG)
+[result](./result.png)
